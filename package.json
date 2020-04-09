@@ -11,6 +11,7 @@
   "homepage": "https://github.com/maoberlehner/vuex-map-fields",
   "license": "MIT",
   "scripts": {
+    "prepare": "npm run build",
     "scripts:umd": "rollup --config --output.format umd --name vuex-map-fields --output.file dist/index.js src/index.js",
     "scripts:es": "rollup --config --output.format es --name vuex-map-fields --output.file dist/index.esm.js src/index.js",
     "scripts:minify": "uglifyjs --compress --mangle --comments --output dist/index.min.js dist/index.js && uglifyjs --compress --mangle --comments --output dist/index.esm.min.js dist/index.esm.js",
